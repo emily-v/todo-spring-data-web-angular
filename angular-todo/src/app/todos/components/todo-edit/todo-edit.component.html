@@ -1,0 +1,5 @@
+<input #input [type]="type" name="todo-edit" id="todo-edit"
+  [value]="type === 'text' ? dummy[prop] : null"
+  (keyup)="type === 'text' ? handleInput($event) : null"
+  (change)="type === 'checkbox' ? handleChange($event) : null"
+  [checked]="type === 'checkbox' ? dummy[prop] : false">

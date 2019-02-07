@@ -1,0 +1,24 @@
+<div 
+  class="list-item"
+  [ngClass]="{ 'not-done': !todoItem.complete, 'done': todoItem.complete }">
+  <div class="text">
+      <label 
+      (click)="beginEdit()"
+      *ngIf="!isEditing">{{ todoItem.title }}</label>
+    <app-todo-edit 
+    *ngIf="isEditing"
+    [type]="'text'" 
+    [editItem]="todoItem" 
+    [prop]="'title'"
+    (editEvent)="endEdit($event)"></app-todo-edit>
+  </div>
+  <div class="item-controls">
+    <a [routerLink]="todoItem.id">View</a>
+    <app-todo-edit 
+      [type]="'checkbox'" 
+      [editItem]="todoItem" 
+      [prop]="'complete'" 
+      (editEvent)="endEdit($event)"></app-todo-edit>
+    <button class="btn-danger" (click)="deleteClick($event)">X</button>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="list-container">
+    <app-todo-edit 
+      [type]="'text'" 
+      (editEvent)="handleNew($event)" 
+      [editItem]="temp" 
+      [prop]="'title'"></app-todo-edit>
+    <app-todo-item
+      *ngFor="let todo of todos"
+      [todoItem]="todo"
+      (itemEdit)="handleEdit($event)"
+      (deleteItem)="handleDelete($event)"></app-todo-item>
+  </div>
+</div>

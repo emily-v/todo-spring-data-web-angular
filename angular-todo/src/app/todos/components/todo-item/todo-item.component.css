@@ -1,0 +1,53 @@
+.done {
+    background: linear-gradient(to right, rgba(255, 100, 100) 50%, rgba(100, 255, 100) 50%);
+    animation: d .5s ease-out;
+    background-position: right bottom;
+}
+
+.not-done {
+    background: linear-gradient(to right, rgba(255, 100, 100) 50%, rgba(100, 255, 100) 50%);
+    animation: nd .5s ease-out;
+    background-position: left bottom;
+}
+
+@keyframes nd {
+    0%{background-position:100% 0%}
+    25%{background-position:75% 25%}
+    50%{background-position:50% 50%}
+    75%{background-position:25% 75%}
+    100%{background-position:0% 100%}
+}
+
+@keyframes d {
+    0%{background-position:0% 100%}
+    25%{background-position:25% 75%}
+    50%{background-position:50% 50%}
+    75%{background-position:75% 25%}
+    100%{background-position:100% 0%}
+}
+
+.item-controls {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+.list-item {
+    padding: 2em;
+    background-size: 200% 100%;
+}
+
+.list-item:hover {
+    position: relative;
+    left: 10px;
+    box-shadow: -10px 0 20px 2px #777;
+}
+
+.list-item .text {
+    width: 80%;
+    display: inline-block;
+}
+
+.list-item label {
+    font-size: 1.75em;
+}

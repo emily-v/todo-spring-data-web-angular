@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 3,
+      "title": "Paint the fence",
+      "complete": false
+    },
+    {
+      "id": 4,
+      "title": "Trim the bonsai",
+      "complete": true
+    },
+    {
+      "id": 5,
+      "title": "Wax the car",
+      "complete": false
+    },
+    {
+      "id": 6,
+      "title": "Catch the flies",
+      "complete": false
+    },
+    {
+      "id": 7,
+      "title": "Sweep the leg",
+      "complete": false
+    }
+  ]
+}

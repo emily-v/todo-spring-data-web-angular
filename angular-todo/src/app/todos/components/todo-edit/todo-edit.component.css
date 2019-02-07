@@ -1,0 +1,15 @@
+input[type="checkbox"] {
+    width: 1.7em;
+    height: 1.7em;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    font-size: 2em;
+    width: 99.1%
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
